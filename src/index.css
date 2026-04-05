@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Light Theme (Default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f8f8;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f5f5f5;
+  --bg-sidebar: #f0f0f0;
+  --border: #e0e0e0;
+  --border-light: #eeeeee;
+
+  --green: #2e7d32;
+  --green-dim: #2e7d3220;
+  --green-mid: #2e7d3240;
+  --red: #c62828;
+  --red-dim: #c6282820;
+  --red-mid: #c6282840;
+  --yellow: #f57f17;
+  --blue: #1565c0;
+  --blue-dim: #1565c020;
+
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+
+  --font-display: "Syne", sans-serif;
+  --font-mono: "DM Mono", monospace;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --sidebar-width: 220px;
+  --topbar-height: 60px;
+
+  --transition: 0.2s ease;
+
+  /* Component-specific colors */
+  --grid-line: rgba(0, 0, 0, 0.05);
+  --tooltip-bg: rgba(255, 255, 255, 0.95);
+  --tooltip-border: rgba(0, 0, 0, 0.1);
+  --tooltip-shadow: rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-primary: #0d0d0f;
+  --bg-secondary: #141416;
+  --bg-card: #1a1a1e;
+  --bg-card-hover: #1f1f24;
+  --bg-sidebar: #111113;
+  --border: #2a2a30;
+  --border-light: #222228;
+
+  --green: #00e676;
+  --green-dim: #00e67620;
+  --green-mid: #00e67640;
+  --red: #ff3d57;
+  --red-dim: #ff3d5720;
+  --red-mid: #ff3d5740;
+  --yellow: #ffd740;
+  --blue: #448aff;
+  --blue-dim: #448aff20;
+
+  --text-primary: #f0f0f2;
+  --text-secondary: #8888a0;
+  --text-muted: #55556a;
+
+  /* Component-specific colors */
+  --grid-line: rgba(255, 255, 255, 0.05);
+  --tooltip-bg: rgba(12, 12, 12, 0.95);
+  --tooltip-border: rgba(255, 255, 255, 0.1);
+  --tooltip-shadow: rgba(0, 0, 0, 0.5);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 99px;
+}
+
+button {
+  font-family: var(--font-display);
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font-family: var(--font-display);
+}
