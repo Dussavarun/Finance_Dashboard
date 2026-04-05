@@ -23,7 +23,7 @@ function AppInner() {
       <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       <div className="main-content">
         <Topbar onMenuToggle={() => setSidebarOpen((o) => !o)} />
-        <main className="page-body">
+        <main className="page-body" key={state.activePage}>
           {pages[state.activePage] || <Dashboard />}
         </main>
       </div>

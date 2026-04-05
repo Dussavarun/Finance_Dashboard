@@ -28,7 +28,7 @@ export default function Topbar({ onMenuToggle }) {
           <span />
           <span />
         </button>
-        <div>
+        <div className="topbar-title-wrapper" key={state.activePage}>
           <div className="topbar-title">{title}</div>
           <div className="topbar-subtitle">{subtitle}</div>
         </div>
