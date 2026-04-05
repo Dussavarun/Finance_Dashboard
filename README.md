@@ -7,7 +7,7 @@ Designed for users to track income, expenses, and spending patterns through an i
 
 ## 🌐 Live Demo
 
-> _Add your deployed link here (Vercel / Netlify / GitHub Pages)_
+https://zorvynfinance.netlify.app/
 
 ---
 
